@@ -12,11 +12,7 @@ it('renders without crashing', () => {
 
 afterEach(rtl.cleanup)
 
-test('Render the app', () => {
+test('strikes renders in the app', () => {
   const wrapper = rtl.render(<App />)
-  wrapper.debug()
-})
-
-test('Render count input', () => {
-  
+  wrapper.getByText(/strikes/i)
 })

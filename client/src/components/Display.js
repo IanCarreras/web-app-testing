@@ -16,8 +16,8 @@ export default function Display(props) {
     const { ball, strike } = props.display
     return (
         <Wrapper>
-            <Box>Balls: {ball}</Box>
-            <Box>Strikes: {strike}</Box>
+            <Box>Balls : {ball}</Box>
+            <Box>Strikes : {strike}</Box>
         </Wrapper>
     )
 }

@@ -12,8 +12,9 @@ function App() {
   })
 
   useEffect(() => {
-    if (display.ball === 4) setDisplay({...display, 'ball': 0}) 
+    if (display.ball === 4) setDisplay({ 'strike': display.strike+1, 'ball': 0}) 
     if (display.strike === 3) setDisplay({...display, 'strike': 0})
+
   }, [display])
 
   return (
